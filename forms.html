@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML FORMS</title>
+</head>
+<link rel="stylesheet" href="Styles.css">
+
+<body>
+  <h1>HTML FORMS TUTORIAL</h1>
+  <!-- form tag -->
+  <form class="" action="mailto:sidpd57@gmail.com" method="post">
+    <!-- input tags & their use -->
+
+
+    <!-- input type text -->
+    <div class="input">
+      <label for="name">Name: </label><input type="text" name="Name" value="sid" id="name">
+    </div>
+    <!-- input type number-->
+    <div class="input">
+      <label for="number">Number: </label><input type="number" name="PhoneNo." value="" id="number" min="1000000000" max="9999999999">
+    </div>
+    <!-- input type date -->
+    <div class="input">
+      <label for="dob">D.O.B: </label><input type="date" name="D.O.B" value="" id="dob" min="2008-12-31">
+    </div>
+    <!-- input type e-mail-->
+    <div class="input">
+      <label for="email">e-mail: </label><input type="email" name="email" value="" id="email">
+    </div>
+
+
+    <!-- input type radio button -->
+    <h3>select your gender</h3>
+    <div class="radio-checkbox">
+      <input type="radio" name="gender" value="male" id="male"><label for="male"> Male</label><br>
+      <input type="radio" name="gender" value="female" id="female"><label for="female"> Female</label><br>
+      <input type="radio" name="gender" value="other" id="other"><label for="other">Other</label><br><br>
+    </div>
+
+
+    <!-- input type checkbox -->
+    <h3>Select your language/languages:</h3>
+    <div class="radio-checkbox">
+      <input type="checkbox" name="skill" value="newbie" id="skill">
+      <label for="skill"> Newbie</label><br>
+      <input type="checkbox" name="skill1" value="c++" id="skill1">
+      <label for="skill1"> c++</label><br>
+      <input type="checkbox" name="slkill2" value="java" id="skill2">
+      <label for="skill2"> java</label><br>
+      <input type="checkbox" name="slkill3" value="python" id="skill3">
+      <label for="skill3"> Python</label><br>
+      <input type="checkbox" name="slkill4" value="c#" id="skill4">
+      <label for="skill4"> C#</label><br>
+    </div>
+
+    <!-- select -->
+    <label for="edu">
+      <h3>Education</h3>
+    </label>
+    <div class="input">
+      <select class="" name="" id="edu">
+        <option value="10th" selected>Upto 10th</option>
+        <option value="12th">Upto 12th</option>
+        <option value="UG">Under graduate</option>
+        <option value="PG">Post graduate</option>
+        <option value="Ph.D">Ph.D</option>
+      </select>
+    </div>
+
+    <!-- text area -->
+
+    <label for="msg">
+      <h3>Message:</h3>
+    </label>
+    <div class="input">
+      <textarea name="Message" rows="8" cols="80" id="msg">Write your message :)</textarea>
+    </div>
+
+    <div class="input">
+      <!-- input type reset -->
+      <input type="reset" value="reset">
+      <!-- input type submit -->
+      <input type="submit" value="submit">
+    </div>
+
+  </form>
+</body>
+
+</html>
